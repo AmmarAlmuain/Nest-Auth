@@ -51,7 +51,7 @@ export class AuthController {
     }
   }
 
-  @Post()
+  @Post("login")
   async login(
     @Body() userDto: UserDto,
     @Res() response: Response,
